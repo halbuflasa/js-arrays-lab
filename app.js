@@ -68,9 +68,33 @@ nums.forEach((num)=>{
         fizzbuzz.push(num);
     }
  });
-
-
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
 console.log('  buzz:', buzz);
 console.log('  fizzbuzz:', fizzbuzz);
+
+//Exercise 13: Retrieve the Last Array
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
+let numList=[];
+numList= numArrays[numArrays.length-1];
+console.log('Exercise 13 result:', numList);
+
+//Exercise 14: Accessing within nested arrays
+
+const num = numArrays[2][1];
+console.log('Exercise 14 result:', num);
+
+//Exercise 15: Nested array sum
+let total =0; 
+for (let i = 0; i < numArrays.length; i++) {
+    for (let j = 0; j < numArrays[i].length; j++) {
+    total=total+numArrays[i][j];
+     }
+    }
+
+console.log('Exercise 15 result:\n', total);
