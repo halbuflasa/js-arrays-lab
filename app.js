@@ -34,6 +34,43 @@ const soyIdx= foods.indexOf('tofu');
 console.log('Exercise 8 result:', soyIdx);
 
 //Exercise 9: Joining elements
-console.log(foods);
 const allFoods = foods.join(' -> ');
 console.log('Exercise 9 result:', allFoods);
+
+//Exercise 10: Check for an element
+const hasSoup= foods.includes( 'soup');
+console.log('Exercise 10 result:', hasSoup);
+
+//Exercise 11: Odd numbers from an array
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+
+const odds =[]; 
+nums.forEach((num)=>{
+if(num%2 != 0){
+    odds.push(num);
+   }
+});
+console.log('Exercise 11 result:', odds);
+
+//Exercise 12: FizzBuzz with arrays
+const fizz= [];
+const buzz=[];
+const fizzbuzz=[];
+
+nums.forEach((num)=>{
+    if(num % 3 ==0){
+        fizz.push(num);
+    }
+    if(num % 5 == 0){
+        buzz.push(num);
+    }
+    if(num % 3 ==0 && num % 5 == 0){
+        fizzbuzz.push(num);
+    }
+ });
+
+
+console.log('Exercise 12 Results:');
+console.log('  fizz:', fizz);
+console.log('  buzz:', buzz);
+console.log('  fizzbuzz:', fizzbuzz);
